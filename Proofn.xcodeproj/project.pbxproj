@@ -7,13 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05C43E8227E6A6A002F0A6D /* MessagePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C43E7227E6A6A002F0A6D /* MessagePresenterProtocol.swift */; };
+		A05C43EA227E6AF2002F0A6D /* MessageInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C43E9227E6AF2002F0A6D /* MessageInteractorProtocol.swift */; };
+		A05C43EC227E6C43002F0A6D /* MessagesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C43EB227E6C43002F0A6D /* MessagesRepositoryProtocol.swift */; };
+		A05C43EE227E6CC8002F0A6D /* MessageViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C43ED227E6CC8002F0A6D /* MessageViewProtocol.swift */; };
 		A06C3160227D58F200D30307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C315F227D58F200D30307 /* AppDelegate.swift */; };
-		A06C3162227D58F200D30307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C3161227D58F200D30307 /* ViewController.swift */; };
 		A06C3165227D58F200D30307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06C3163227D58F200D30307 /* Main.storyboard */; };
 		A06C3168227D58F200D30307 /* Proofn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A06C3166227D58F200D30307 /* Proofn.xcdatamodeld */; };
 		A06C316A227D58F500D30307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06C3169227D58F500D30307 /* Assets.xcassets */; };
 		A06C316D227D58F500D30307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06C316B227D58F500D30307 /* LaunchScreen.storyboard */; };
 		A06C3178227D58F600D30307 /* ProofnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C3177227D58F600D30307 /* ProofnTests.swift */; };
+		A06C318D227D61CE00D30307 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06C318C227D61CE00D30307 /* LoginView.storyboard */; };
+		A06C3191227D657400D30307 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C3190227D657400D30307 /* LoginView.swift */; };
+		A06C319A227D8B3200D30307 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C3199227D8B3200D30307 /* RootRouter.swift */; };
+		A06C319C227D8B8300D30307 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C319B227D8B8300D30307 /* LoginRouter.swift */; };
+		A06C319F227D8BB400D30307 /* LoginRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C319E227D8BB400D30307 /* LoginRouterProtocol.swift */; };
+		A06C31A3227D8F2A00D30307 /* ProofnRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31A2227D8F2A00D30307 /* ProofnRepository.swift */; };
+		A06C31A8227DC5EA00D30307 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31A7227DC5EA00D30307 /* LoginResponse.swift */; };
+		A06C31AA227DC7A000D30307 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31A9227DC7A000D30307 /* LoginInteractor.swift */; };
+		A06C31AC227DC7D400D30307 /* LoginRequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31AB227DC7D400D30307 /* LoginRequesterProtocol.swift */; };
+		A06C31AE227DC8B400D30307 /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31AD227DC8B400D30307 /* LoginRepositoryProtocol.swift */; };
+		A06C31B0227DC99500D30307 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31AF227DC99500D30307 /* LoginPresenterProtocol.swift */; };
+		A06C31B2227DCB3600D30307 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31B1227DCB3600D30307 /* LoginPresenter.swift */; };
+		A06C31B4227DD27700D30307 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31B3227DD27700D30307 /* LoginViewProtocol.swift */; };
+		A06C31B6227DD65700D30307 /* ProofnEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31B5227DD65700D30307 /* ProofnEndPoint.swift */; };
+		A06C31B9227DD6E100D30307 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31B8227DD6E100D30307 /* EndPointType.swift */; };
+		A06C31BB227DD85600D30307 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31BA227DD85600D30307 /* HTTPMethod.swift */; };
+		A06C31BD227DD8A400D30307 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31BC227DD8A400D30307 /* HTTPTask.swift */; };
+		A06C31BF227DD8D700D30307 /* ParameterEncodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31BE227DD8D700D30307 /* ParameterEncodeProtocol.swift */; };
+		A06C31CB227DDAB100D30307 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31CA227DDAB100D30307 /* ParameterEncoding.swift */; };
+		A06C31CD227DDB0A00D30307 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31CC227DDB0A00D30307 /* URLParameterEncoder.swift */; };
+		A06C31CF227DDB6C00D30307 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31CE227DDB6C00D30307 /* JSONParameterEncoder.swift */; };
+		A06C31D1227DE45C00D30307 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31D0227DE45C00D30307 /* Router.swift */; };
+		A06C31D3227DE49800D30307 /* RootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31D2227DE49800D30307 /* RootManager.swift */; };
+		A06C31D5227DE4FF00D30307 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31D4227DE4FF00D30307 /* NetworkRouter.swift */; };
+		A06C31D7227DE51D00D30307 /* ProofnNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31D6227DE51D00D30307 /* ProofnNetworkManager.swift */; };
+		A06C31DA227E437800D30307 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31D9227E437800D30307 /* UserDefaults.swift */; };
+		A06C31DE227E466400D30307 /* MessagesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06C31DD227E466400D30307 /* MessagesView.storyboard */; };
+		A06C31E0227E46A800D30307 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31DF227E46A800D30307 /* MessagesView.swift */; };
+		A06C31E2227E4D5D00D30307 /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31E1227E4D5D00D30307 /* MessageEntity.swift */; };
+		A06C31E4227E4DD500D30307 /* MessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31E3227E4DD500D30307 /* MessagesResponse.swift */; };
+		A06C31E6227E4E5000D30307 /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31E5227E4E5000D30307 /* MessagePresenter.swift */; };
+		A06C31E8227E4E5900D30307 /* MessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31E7227E4E5900D30307 /* MessageInteractor.swift */; };
+		A06C31EA227E4E6900D30307 /* MessageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31E9227E4E6900D30307 /* MessageRouter.swift */; };
+		A06C31EC227E4EBA00D30307 /* MessageRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C31EB227E4EBA00D30307 /* MessageRouterProtocol.swift */; };
+		A077492B227E84ED00FE35A6 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077492A227E84ED00FE35A6 /* MessageCell.swift */; };
+		A077492D227EAB4700FE35A6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077492C227EAB4700FE35A6 /* UIImageView.swift */; };
+		A0774931227EE61B00FE35A6 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0774930227EE61B00FE35A6 /* DetailView.storyboard */; };
+		A0774933227EE62B00FE35A6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0774932227EE62B00FE35A6 /* DetailView.swift */; };
+		A0774935227EE67700FE35A6 /* DetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0774934227EE67700FE35A6 /* DetailInteractorProtocol.swift */; };
+		A0774937227EE6AE00FE35A6 /* DetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0774936227EE6AE00FE35A6 /* DetailResponse.swift */; };
+		A0774939227EE6FC00FE35A6 /* DetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0774938227EE6FC00FE35A6 /* DetailViewProtocol.swift */; };
+		A077493B227EE73900FE35A6 /* DetailRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077493A227EE73900FE35A6 /* DetailRouterProtocol.swift */; };
+		A077493D227EE76A00FE35A6 /* DetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077493C227EE76A00FE35A6 /* DetailPresenterProtocol.swift */; };
+		A077493F227EE7BB00FE35A6 /* DetailRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077493E227EE7BB00FE35A6 /* DetailRepositoryProtocol.swift */; };
+		A0774941227EE81500FE35A6 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0774940227EE81500FE35A6 /* DetailRouter.swift */; };
+		A0774943227EE8A500FE35A6 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0774942227EE8A500FE35A6 /* DetailPresenter.swift */; };
+		A0774945227EE8C000FE35A6 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0774944227EE8C000FE35A6 /* DetailInteractor.swift */; };
+		A0774947227F37E600FE35A6 /* ComposeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0774946227F37E600FE35A6 /* ComposeRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +78,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A05C43E7227E6A6A002F0A6D /* MessagePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePresenterProtocol.swift; sourceTree = "<group>"; };
+		A05C43E9227E6AF2002F0A6D /* MessageInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInteractorProtocol.swift; sourceTree = "<group>"; };
+		A05C43EB227E6C43002F0A6D /* MessagesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A05C43ED227E6CC8002F0A6D /* MessageViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewProtocol.swift; sourceTree = "<group>"; };
 		A06C315C227D58F200D30307 /* Proofn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proofn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06C315F227D58F200D30307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A06C3161227D58F200D30307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A06C3164227D58F200D30307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A06C3167227D58F200D30307 /* Proofn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Proofn.xcdatamodel; sourceTree = "<group>"; };
 		A06C3169227D58F500D30307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +92,54 @@
 		A06C3173227D58F600D30307 /* ProofnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProofnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06C3177227D58F600D30307 /* ProofnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofnTests.swift; sourceTree = "<group>"; };
 		A06C3179227D58F600D30307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06C318C227D61CE00D30307 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		A06C3190227D657400D30307 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A06C3199227D8B3200D30307 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		A06C319B227D8B8300D30307 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		A06C319E227D8BB400D30307 /* LoginRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterProtocol.swift; sourceTree = "<group>"; };
+		A06C31A2227D8F2A00D30307 /* ProofnRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofnRepository.swift; sourceTree = "<group>"; };
+		A06C31A7227DC5EA00D30307 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		A06C31A9227DC7A000D30307 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		A06C31AB227DC7D400D30307 /* LoginRequesterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequesterProtocol.swift; sourceTree = "<group>"; };
+		A06C31AD227DC8B400D30307 /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A06C31AF227DC99500D30307 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
+		A06C31B1227DCB3600D30307 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		A06C31B3227DD27700D30307 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		A06C31B5227DD65700D30307 /* ProofnEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofnEndPoint.swift; sourceTree = "<group>"; };
+		A06C31B8227DD6E100D30307 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		A06C31BA227DD85600D30307 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		A06C31BC227DD8A400D30307 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		A06C31BE227DD8D700D30307 /* ParameterEncodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncodeProtocol.swift; sourceTree = "<group>"; };
+		A06C31CA227DDAB100D30307 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		A06C31CC227DDB0A00D30307 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		A06C31CE227DDB6C00D30307 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		A06C31D0227DE45C00D30307 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A06C31D2227DE49800D30307 /* RootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootManager.swift; sourceTree = "<group>"; };
+		A06C31D4227DE4FF00D30307 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		A06C31D6227DE51D00D30307 /* ProofnNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofnNetworkManager.swift; sourceTree = "<group>"; };
+		A06C31D9227E437800D30307 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		A06C31DD227E466400D30307 /* MessagesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessagesView.storyboard; sourceTree = "<group>"; };
+		A06C31DF227E46A800D30307 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		A06C31E1227E4D5D00D30307 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
+		A06C31E3227E4DD500D30307 /* MessagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesResponse.swift; sourceTree = "<group>"; };
+		A06C31E5227E4E5000D30307 /* MessagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePresenter.swift; sourceTree = "<group>"; };
+		A06C31E7227E4E5900D30307 /* MessageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInteractor.swift; sourceTree = "<group>"; };
+		A06C31E9227E4E6900D30307 /* MessageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRouter.swift; sourceTree = "<group>"; };
+		A06C31EB227E4EBA00D30307 /* MessageRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRouterProtocol.swift; sourceTree = "<group>"; };
+		A077492A227E84ED00FE35A6 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		A077492C227EAB4700FE35A6 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		A0774930227EE61B00FE35A6 /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
+		A0774932227EE62B00FE35A6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A0774934227EE67700FE35A6 /* DetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		A0774936227EE6AE00FE35A6 /* DetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResponse.swift; sourceTree = "<group>"; };
+		A0774938227EE6FC00FE35A6 /* DetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProtocol.swift; sourceTree = "<group>"; };
+		A077493A227EE73900FE35A6 /* DetailRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouterProtocol.swift; sourceTree = "<group>"; };
+		A077493C227EE76A00FE35A6 /* DetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		A077493E227EE7BB00FE35A6 /* DetailRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A0774940227EE81500FE35A6 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		A0774942227EE8A500FE35A6 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		A0774944227EE8C000FE35A6 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		A0774946227F37E600FE35A6 /* ComposeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +181,11 @@
 		A06C315E227D58F200D30307 /* Proofn */ = {
 			isa = PBXGroup;
 			children = (
+				A06C31D8227E435D00D30307 /* Extensions */,
+				A06C31A4227D8F7100D30307 /* Network */,
+				A06C31A0227D8F0E00D30307 /* Repositories */,
+				A06C3182227D607400D30307 /* Components */,
 				A06C315F227D58F200D30307 /* AppDelegate.swift */,
-				A06C3161227D58F200D30307 /* ViewController.swift */,
 				A06C3163227D58F200D30307 /* Main.storyboard */,
 				A06C3169227D58F500D30307 /* Assets.xcassets */,
 				A06C316B227D58F500D30307 /* LaunchScreen.storyboard */,
@@ -97,6 +202,206 @@
 				A06C3179227D58F600D30307 /* Info.plist */,
 			);
 			path = ProofnTests;
+			sourceTree = "<group>";
+		};
+		A06C3182227D607400D30307 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A06C3198227D8B1A00D30307 /* Root */,
+				A06C3186227D60BB00D30307 /* Detail */,
+				A06C3185227D60AD00D30307 /* Messages */,
+				A06C3183227D608A00D30307 /* Login */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A06C3183227D608A00D30307 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A06C3188227D60FD00D30307 /* Implementations */,
+				A06C319D227D8BA300D30307 /* Interfaces */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A06C3185227D60AD00D30307 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31DB227E464300D30307 /* Implementations */,
+				A06C31DC227E464B00D30307 /* Interfaces */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		A06C3186227D60BB00D30307 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A077492E227EE5FD00FE35A6 /* Implementations */,
+				A077492F227EE60B00FE35A6 /* Interfaces */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A06C3188227D60FD00D30307 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				A06C3190227D657400D30307 /* LoginView.swift */,
+				A06C318C227D61CE00D30307 /* LoginView.storyboard */,
+				A06C319B227D8B8300D30307 /* LoginRouter.swift */,
+				A06C31A9227DC7A000D30307 /* LoginInteractor.swift */,
+				A06C31B1227DCB3600D30307 /* LoginPresenter.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		A06C3198227D8B1A00D30307 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A06C3199227D8B3200D30307 /* RootRouter.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A06C319D227D8BA300D30307 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31AD227DC8B400D30307 /* LoginRepositoryProtocol.swift */,
+				A06C319E227D8BB400D30307 /* LoginRouterProtocol.swift */,
+				A06C31A7227DC5EA00D30307 /* LoginResponse.swift */,
+				A06C31AB227DC7D400D30307 /* LoginRequesterProtocol.swift */,
+				A06C31AF227DC99500D30307 /* LoginPresenterProtocol.swift */,
+				A06C31B3227DD27700D30307 /* LoginViewProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		A06C31A0227D8F0E00D30307 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31A1227D8F1B00D30307 /* Message */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A06C31A1227D8F1B00D30307 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31A2227D8F2A00D30307 /* ProofnRepository.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		A06C31A4227D8F7100D30307 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31C0227DD93200D30307 /* Encoding */,
+				A06C31B7227DD6BA00D30307 /* Interfaces */,
+				A06C31A6227D8F7E00D30307 /* Manager */,
+				A06C31A5227D8F7900D30307 /* EndPoint */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A06C31A5227D8F7900D30307 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31B5227DD65700D30307 /* ProofnEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		A06C31A6227D8F7E00D30307 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31D0227DE45C00D30307 /* Router.swift */,
+				A06C31D2227DE49800D30307 /* RootManager.swift */,
+				A06C31D6227DE51D00D30307 /* ProofnNetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A06C31B7227DD6BA00D30307 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31B8227DD6E100D30307 /* EndPointType.swift */,
+				A06C31BA227DD85600D30307 /* HTTPMethod.swift */,
+				A06C31BC227DD8A400D30307 /* HTTPTask.swift */,
+				A06C31BE227DD8D700D30307 /* ParameterEncodeProtocol.swift */,
+				A06C31D4227DE4FF00D30307 /* NetworkRouter.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		A06C31C0227DD93200D30307 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31CA227DDAB100D30307 /* ParameterEncoding.swift */,
+				A06C31CC227DDB0A00D30307 /* URLParameterEncoder.swift */,
+				A06C31CE227DDB6C00D30307 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		A06C31D8227E435D00D30307 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31D9227E437800D30307 /* UserDefaults.swift */,
+				A077492C227EAB4700FE35A6 /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A06C31DB227E464300D30307 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				A06C31DD227E466400D30307 /* MessagesView.storyboard */,
+				A06C31DF227E46A800D30307 /* MessagesView.swift */,
+				A06C31E1227E4D5D00D30307 /* MessageEntity.swift */,
+				A06C31E5227E4E5000D30307 /* MessagePresenter.swift */,
+				A06C31E7227E4E5900D30307 /* MessageInteractor.swift */,
+				A06C31E9227E4E6900D30307 /* MessageRouter.swift */,
+				A077492A227E84ED00FE35A6 /* MessageCell.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		A06C31DC227E464B00D30307 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A05C43EB227E6C43002F0A6D /* MessagesRepositoryProtocol.swift */,
+				A06C31E3227E4DD500D30307 /* MessagesResponse.swift */,
+				A06C31EB227E4EBA00D30307 /* MessageRouterProtocol.swift */,
+				A05C43E7227E6A6A002F0A6D /* MessagePresenterProtocol.swift */,
+				A05C43E9227E6AF2002F0A6D /* MessageInteractorProtocol.swift */,
+				A05C43ED227E6CC8002F0A6D /* MessageViewProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		A077492E227EE5FD00FE35A6 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				A0774930227EE61B00FE35A6 /* DetailView.storyboard */,
+				A0774932227EE62B00FE35A6 /* DetailView.swift */,
+				A0774940227EE81500FE35A6 /* DetailRouter.swift */,
+				A0774942227EE8A500FE35A6 /* DetailPresenter.swift */,
+				A0774944227EE8C000FE35A6 /* DetailInteractor.swift */,
+				A0774946227F37E600FE35A6 /* ComposeRequest.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		A077492F227EE60B00FE35A6 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A0774934227EE67700FE35A6 /* DetailInteractorProtocol.swift */,
+				A0774936227EE6AE00FE35A6 /* DetailResponse.swift */,
+				A0774938227EE6FC00FE35A6 /* DetailViewProtocol.swift */,
+				A077493A227EE73900FE35A6 /* DetailRouterProtocol.swift */,
+				A077493C227EE76A00FE35A6 /* DetailPresenterProtocol.swift */,
+				A077493E227EE7BB00FE35A6 /* DetailRepositoryProtocol.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +485,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06C318D227D61CE00D30307 /* LoginView.storyboard in Resources */,
 				A06C316D227D58F500D30307 /* LaunchScreen.storyboard in Resources */,
+				A0774931227EE61B00FE35A6 /* DetailView.storyboard in Resources */,
 				A06C316A227D58F500D30307 /* Assets.xcassets in Resources */,
+				A06C31DE227E466400D30307 /* MessagesView.storyboard in Resources */,
 				A06C3165227D58F200D30307 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,9 +508,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06C31B9227DD6E100D30307 /* EndPointType.swift in Sources */,
+				A0774945227EE8C000FE35A6 /* DetailInteractor.swift in Sources */,
+				A06C31B4227DD27700D30307 /* LoginViewProtocol.swift in Sources */,
+				A06C31CB227DDAB100D30307 /* ParameterEncoding.swift in Sources */,
+				A06C319F227D8BB400D30307 /* LoginRouterProtocol.swift in Sources */,
+				A06C31E0227E46A800D30307 /* MessagesView.swift in Sources */,
+				A077493B227EE73900FE35A6 /* DetailRouterProtocol.swift in Sources */,
+				A06C31CF227DDB6C00D30307 /* JSONParameterEncoder.swift in Sources */,
+				A06C319A227D8B3200D30307 /* RootRouter.swift in Sources */,
+				A06C31AC227DC7D400D30307 /* LoginRequesterProtocol.swift in Sources */,
+				A0774933227EE62B00FE35A6 /* DetailView.swift in Sources */,
+				A06C31D5227DE4FF00D30307 /* NetworkRouter.swift in Sources */,
 				A06C3168227D58F200D30307 /* Proofn.xcdatamodeld in Sources */,
-				A06C3162227D58F200D30307 /* ViewController.swift in Sources */,
+				A06C31EC227E4EBA00D30307 /* MessageRouterProtocol.swift in Sources */,
+				A077493D227EE76A00FE35A6 /* DetailPresenterProtocol.swift in Sources */,
+				A06C31B6227DD65700D30307 /* ProofnEndPoint.swift in Sources */,
+				A06C31A3227D8F2A00D30307 /* ProofnRepository.swift in Sources */,
+				A06C3191227D657400D30307 /* LoginView.swift in Sources */,
+				A06C31B0227DC99500D30307 /* LoginPresenterProtocol.swift in Sources */,
+				A06C31CD227DDB0A00D30307 /* URLParameterEncoder.swift in Sources */,
+				A077492D227EAB4700FE35A6 /* UIImageView.swift in Sources */,
+				A06C31D7227DE51D00D30307 /* ProofnNetworkManager.swift in Sources */,
+				A077492B227E84ED00FE35A6 /* MessageCell.swift in Sources */,
+				A06C319C227D8B8300D30307 /* LoginRouter.swift in Sources */,
+				A06C31E6227E4E5000D30307 /* MessagePresenter.swift in Sources */,
+				A0774937227EE6AE00FE35A6 /* DetailResponse.swift in Sources */,
+				A06C31EA227E4E6900D30307 /* MessageRouter.swift in Sources */,
+				A05C43EA227E6AF2002F0A6D /* MessageInteractorProtocol.swift in Sources */,
+				A0774947227F37E600FE35A6 /* ComposeRequest.swift in Sources */,
+				A06C31E8227E4E5900D30307 /* MessageInteractor.swift in Sources */,
+				A05C43EE227E6CC8002F0A6D /* MessageViewProtocol.swift in Sources */,
+				A0774939227EE6FC00FE35A6 /* DetailViewProtocol.swift in Sources */,
+				A06C31B2227DCB3600D30307 /* LoginPresenter.swift in Sources */,
+				A06C31E4227E4DD500D30307 /* MessagesResponse.swift in Sources */,
+				A06C31D3227DE49800D30307 /* RootManager.swift in Sources */,
+				A0774943227EE8A500FE35A6 /* DetailPresenter.swift in Sources */,
+				A0774941227EE81500FE35A6 /* DetailRouter.swift in Sources */,
+				A06C31BD227DD8A400D30307 /* HTTPTask.swift in Sources */,
+				A06C31D1227DE45C00D30307 /* Router.swift in Sources */,
+				A06C31BF227DD8D700D30307 /* ParameterEncodeProtocol.swift in Sources */,
+				A05C43EC227E6C43002F0A6D /* MessagesRepositoryProtocol.swift in Sources */,
+				A0774935227EE67700FE35A6 /* DetailInteractorProtocol.swift in Sources */,
+				A06C31BB227DD85600D30307 /* HTTPMethod.swift in Sources */,
+				A06C31A8227DC5EA00D30307 /* LoginResponse.swift in Sources */,
+				A06C31DA227E437800D30307 /* UserDefaults.swift in Sources */,
+				A06C31AE227DC8B400D30307 /* LoginRepositoryProtocol.swift in Sources */,
+				A06C31E2227E4D5D00D30307 /* MessageEntity.swift in Sources */,
 				A06C3160227D58F200D30307 /* AppDelegate.swift in Sources */,
+				A05C43E8227E6A6A002F0A6D /* MessagePresenterProtocol.swift in Sources */,
+				A077493F227EE7BB00FE35A6 /* DetailRepositoryProtocol.swift in Sources */,
+				A06C31AA227DC7A000D30307 /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
